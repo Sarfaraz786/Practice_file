@@ -1,0 +1,303 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'MyriadProSemiboldSemiExtended';
+    src: url('myriadpro-semiboldsemiext-webfont.eot');
+    src: url('myriadpro-semiboldsemiext-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myriadpro-semiboldsemiext-webfont.woff') format('woff'),
+         url('myriadpro-semiboldsemiext-webfont.ttf') format('truetype'),
+         url('myriadpro-semiboldsemiext-webfont.svg#MyriadProSemiboldSemiExtended') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProSemiExtended';
+    src: url('myriadpro-semiext-webfont.eot');
+    src: url('myriadpro-semiext-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myriadpro-semiext-webfont.woff') format('woff'),
+         url('myriadpro-semiext-webfont.ttf') format('truetype'),
+         url('myriadpro-semiext-webfont.svg#MyriadProSemiExtended') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+html {
+	overflow:auto;
+}
+html, body {
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	cursor:default;
+	background:#ccc;
+}
+#webbg {
+	position:fixed;
+	width:100%;
+	height:100%;
+	z-index:1;
+	overflow:hidden;
+	background:url(../img/ajax-loader.gif) center no-repeat;
+}
+#webbg div {
+	position:absolute;
+	z-index:2;
+	width:100%;
+	height:100%;
+}
+#webbg img {
+	min-width:100%;
+	min-height:100%;
+	position:absolute;
+	right:0;
+	bottom:0;
+	display:none;
+	z-index:1;
+}
+a {
+	text-decoration:none;
+}
+a img {
+	border:none;
+}
+* {
+	outline:none;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+#wrap {
+	position:relative;
+	min-height:100%;
+	min-width:960px;
+	z-index:2;
+}
+.footer {
+	position:fixed;
+	overflow:auto;
+	bottom:-5%;
+	left:3%;
+	right:6%;
+	color:#fff;
+	background: #3cb6e4;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#51c6f1', endColorstr='#28a6d6');
+	background: -webkit-gradient(linear, left top, left bottom, from(#51c6f1), to(#28a6d6));
+	background: -moz-linear-gradient(top,  #51c6f1,  #28a6d6);
+	z-index:1;
+}
+.footer .left {
+	padding:15px 25px;
+}
+.footer .right ul.social-ico{
+	padding:7px 105px 0px 0;
+}
+.footer .right ul.social-ico img {
+	vertical-align:middle;
+}
+.footer ul.social-ico {
+	margin:0;
+	padding:0;
+	list-style:none;
+	overflow:auto;
+}
+.footer .social-ico li {
+	float:left;
+	margin-left:20px;
+}
+.footer .social-ico li a {
+	display:block;
+}
+.leftbar {
+	overflow:auto;
+	position:absolute;
+	left:3%;
+	top:3%;
+	z-index:2;
+	width:327px;
+}
+#logo {
+	width:327px;
+}
+#logo a {
+	display:block;
+	height:94px;
+	background:url(../img/logo.png) no-repeat center;
+	text-indent:-9999px;
+	position:relative;
+}
+#logo a span {
+	position:absolute;
+	width:47px;
+	height:47px;
+	background:url(../img/logocenter.png) no-repeat center;
+	left:128px;
+	top:57px;
+	-moz-transition:all 1.25s linear;
+	-webkit-transition:all 1.25s linear;
+	-o-transition:all 1.25s linear;
+	-ms-transition:all 1.25s linear;
+	transition:all 1.25s linear;
+}
+#logo a:hover span {
+	transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-webkit-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+}
+#tagline {
+	font-weight:bold;
+	text-align:center;
+	border:1px solid #000;
+	margin:2px 0;
+	padding:5px 0;
+	border-left:none;
+	border-right:none;
+	font-family:MyriadProSemiboldSemiExtended, arial;
+	text-shadow:3px 3px 5px #333;
+	font-size:20px;
+}
+.blackbar {
+	background:#000;
+	height:25px;
+	margin-bottom:2px;
+}
+#whatsnew {
+	margin-top:10px;
+}
+#whatsnew h1 {
+	text-align:center;
+	color:#ffff7f;
+	margin:0;
+	padding:7px 0;
+	background: #4b4a4f;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#626266', endColorstr='#4b4a4f');
+	background: -webkit-gradient(linear, left top, left bottom, from(#626266), to(#4b4a4f));
+	background: -moz-linear-gradient(top,  #626266,  #4b4a4f);
+	border-bottom:1px solid  #fff;
+	margin-right:8px;
+	font-size:20px;
+}
+#whatsnew ul {
+	background:url(../img/transgray.png);
+	margin:0;
+	list-style:none;
+	padding:22px;
+	overflow:auto;
+	width:275px;
+}
+
+#whatsnew ul li {
+	float:left;
+	width:136px;
+	height:71px;
+	border-top:3px solid #fff;
+	position:relative;
+}
+#whatsnew ul li a {
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	overflow:hidden;
+	background:url(../img/ajax-loader-small.gif) no-repeat center;
+}
+#whatsnew ul li a img {
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+	display:none;
+}
+#whatsnew ul li a span {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:#333 url(../img/zoom.png) center no-repeat;
+	left:0;
+	top:0;
+	z-index:2;
+	opacity:0.4;
+	display:none;
+}
+#whatsnew ul li:first-child {
+	border-top:none;
+}
+#whatsnew ul li:nth-child(2) {
+	border-top:none;
+}
+#whatsnew ul li:nth-child(odd) {
+	border-right:3px solid #fff;
+}
+#nav {
+	position:absolute;
+	right:6%;
+	top:-5%;
+	overflow:auto;
+	z-index:2;
+}
+#nav ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	overflow:auto;
+}
+#nav ul li {
+	float:left;
+	margin-left:30px;
+}
+#nav ul li a {
+	display:block;
+	color:#fff;
+	text-shadow:0 0 3px #000;
+	position:relative;
+	padding:9px 15px 5px 15px;
+	margin-top:2px;
+	font-size:15px;
+	font-family:MyriadProSemiExtended;
+	margin-bottom:2px;
+	text-transform:uppercase;
+	color:#4b484e;
+}
+#nav ul li:hover a, #nav ul li.active a {
+	color:#fff;
+}
+#nav ul li a span {
+	position:absolute;
+	background:#0CF;
+	width:100%;
+	min-height:4px;
+	top:0;
+	left:0;
+	z-index:-1;
+	background: #3cb6e4;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#51c6f1', endColorstr='#28a6d6');
+	background: -webkit-gradient(linear, left top, left bottom, from(#51c6f1), to(#28a6d6));
+	background: -moz-linear-gradient(top,  #51c6f1,  #28a6d6);
+	
+	-moz-box-shadow:1px 1px 2px #000;
+	-webkit-box-shadow:1px 1px 2px #000;
+	-o-box-shadow:1px 1px 2px #000;
+	-ms-box-shadow:1px 1px 2px #000;
+	box-shadow:1px 1px 2px #000;
+}
+#nav ul li.active a span {
+	height:100%;
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Sell your buy mine.com</title>
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="js/html5.placeholder.js" type="text/javascript"></script>
+<script src="js/jquery.hval.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="wrap">
+	<div class="header">
+		<div class="left">
+			<div id="logo"><a href="./">Sell your buy mine.com</a></div>
+			<div id="loginbox" class="loggedin">
+				<form action="#" method="post" class="loginform">
+					<input type="text" name="username" class="field" placeholder="Username"/>
+					<input type="text" name="password" class="field" placeholder="Password"/>
+					<input type="image" src="img/loginbut.gif" alt="Login" class="submit" />
+					<div class="links"> <a href="#">Forgot Password?</a><br />
+						<a href="#">Create Account</a> </div>
+				</form>
+				<div class="userdet"><a href="#">Hi Karthi !! You have 2 messages waiting</a></div>
+				<div class="dealoftheday"><a href="#dfd">Deal of the Day</a></div>
+				
+			</div>
+			<div class="topnav">
+				<ul>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Business forum</a></li>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Profile</a></li>
+					<li><a href="#">Log Out</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="chcur">
+				<div class="curcur"><img src="img/countryico/ind.png" alt="India" /> IND</div>
+				<ul>
+					<li><a href="#"><img src="img/countryico/ind.png" alt="India" /> IND</a></li>
+					<li><a href="#"><img src="img/countryico/ind.png" alt="India" /> IND</a></li>
+					<li><a href="#"><img src="img/countryico/ind.png" alt="India" /> IND</a></li>
+					<li><a href="#"><img src="img/countryico/ind.png" alt="India" /> IND</a></li>
+					<li><a href="#"><img src="img/countryico/ind.png" alt="India" /> IND</a></li>
+				</ul>
+			</div>
+			<div class="salsup"><strong>24/7 Sales &amp; Support</strong></div>
+			<div class="contno">(480) 505-8877</div>
+		</div>
+	</div>
+	<div class="mainnav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Buy</a></li>
+			<li><a href="sells.html">Sell</a></li>
+			<li><a href="#">Contact us</a></li>
+			<li><a href="#">My Account</a></li>
+			<li class="last"><a href="#"><img src="img/darrow.png" alt="" /></a></li>
+		</ul>
+	</div>
+	<div class="blankheight" style="height:40px;"></div>
+	<div class="content">
+		<div class="leftsidebar">
+			<ul class="leftnav">
+				<li><a href="#">Buy Form</a></li>
+				<li><a href="#">Sell Form</a></li>
+				<li><a href="#">Company Profile</a></li>
+				<li><a href="#">Message Center</a></li>
+				<li><a href="#">Transaction History</a></li>
+				<li><a href="#">Manage External Account</a></li>
+			</ul>
+		</div>
+		<div class="contentbar">
+			<button class="buybutton">Buy Form</button>
+			<table class="dealstable">
+				<thead>
+				<tr>
+					<th>Product</th>
+					<th>Description</th>
+					<th>Category</th>
+					<th class="deletedeal">&nbsp;</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="deletedeal"><a href="#">Delete</a></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="deletedeal"><a href="#">Delete</a></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="deletedeal"><a href="#">Delete</a></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td class="deletedeal"><a href="#">Delete</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="addproductform">
+				<form action="#" method="post" enctype="multipart/form-data">
+					<ul>
+						<li>
+							<label for="product">Product</label>
+							<input class="field required" type="text" name="Product" id="product" placeholder="Enter text">
+						</li>
+						<li>
+							<label for="description">Description</label>
+							<input class="field required" type="text" name="description" id="description" placeholder="Enter text">
+						</li>
+						<li>
+							<label for="category">Category</label>
+							<input class="field required" type="text" name="category" id="category" placeholder="Enter text">
+						</li>
+						<li>
+							<label for="Photo">Photo</label>
+							<img src="img/blankthumb.jpg" id="prodthumb" alt="">
+							<input class="field required" type="file" name="photo" id="photo" onchange="displaythumb(this);">
+							<button class="removeimg">Remove</button>
+						</li>
+						<li>
+							<label>&nbsp;</label>
+							<input type="submit" value="Submit">
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="left"><a href="#"><img src="img/ft-ico1.gif" /></a> <a href="#"><img src="img/ft-ico2.gif" /></a></div>
+		<p> <a href="#">Terms</a> | <a href="#">Privacy Policy</a> | <a href="#">About us</a> | <a href="#">User Guides</a> | <a href="#">Site map</a> | <a href="#">Contact Us</a><br />
+			Copyright &copy; 2011 Tradex.com Limited And Licensors. All rights reserved. </p>
+		<div class="right"><a href="#"><img src="img/fb-ico.gif" alt="" /></a><a href="#"><img src="img/tw-ico.gif" alt="" /></a><a href="#"><img src="img/yt-ico.gif" alt="" /></a></div>
+	</div>
+</div>
+</body>
+</html>

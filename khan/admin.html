@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Admin</title>
+<style>
+html, body{
+width:100%;
+height:100%;
+margin:0;
+padding:0;
+}
+body{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#fff;
+background:#f9f9f9;
+overflow:hidden;
+}
+
+.bgwrap{
+width:340px;
+margin:80px auto;
+background:#f9f9f9;
+border-radius:18px;
+box-shadow:5px 15px 20px #888;
+overflow:auto;
+-moz-transition: all 1s ease-in-out;
+-webkit-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+ -ms-transition: all 1s ease-in-out
+}
+
+.bgwrap:hover{
+background-color: #f9f9f9;
+    
+  }
+.wrap{
+
+padding:10px;
+overflow:auto;
+background:#ccc;
+border-radius:18px;
+-moz-box-shadow:  0 0 5px 10px #888 inset;
+-webkit-box-shadow:  0 0 5px 10px#888 inset;
+-o-box-shadow:  0 0 5px 10px#888 inset;
+-ms-box-shadow:  0 0 5px 10px#888 inset;
+box-shadow: inset 0 0 5px 10px #888;
+
+overflow:auto;
+}
+.admin-form{
+margin:30px auto;
+/*border:1px solid #f00;*/
+}
+/*.admin-form label{
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+text-transform:uppercase;
+font-weight:300;
+display:block;
+margin:0;
+padding:0;}*/
+
+.admin-form  ul{
+list-style:none;
+margin:0;
+padding:0;
+
+}
+.admin-form  ul li{
+overflow:auto;
+padding-bottom:12px;
+text-transform:uppercase;
+}
+.admin-form  ul li label{
+display:block;
+width:100px;
+float:left;
+margin-left:20px;
+}
+.admin-form .submit{
+width:70px;
+min-height:30px;
+	border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #c5c5c5;
+	border-bottom:1px solid #c5c5c5;
+	background:#727272;
+	-moz-box-shadow:  0 0 5px 3px #333 inset;
+    -webkit-box-shadow:  0 0 5px 3px#333 inset;
+	-o-box-shadow:  0 0 5px 3px#333 inset;
+	-ms-box-shadow:  0 0 5px 3px#333 inset;
+    box-shadow: inset 0 0 5px 3px #333;
+	color:#fff;
+	letter-spacing:1px;
+	/*padding:5px 10px*/
+	font-size:13px;
+	cursor:pointer;
+	margin-top:15px;
+	border-radius:10px 0 10px 0;
+	-moz-transition:width 2s;
+	-webkit-transition:width 2s;
+	-o-transition:width 2s;
+	-ms-transition:width 2s;
+	-khtml-transition:width 2s;
+   -moz-transition:all 1s ease-in-out;
+   -webkit-transition:all 1s ease-in-out;
+   -o-transition:all 1s ease-in-out;
+   -ms-transition:all 1s ease-in-out;
+   -khtml-transition:all 1s ease-in-out;
+   
+} 
+
+.admin-form .submit:hover{
+width:160px;
+background:#ccc;
+color:#fff;
+}
+
+.admin-form .field{
+    border-top:1px solid #ccc;
+	border-left:1px solid #ccc;
+	border-right:1px solid #f0f0f0;
+	border-bottom:1px solid #f0f0f0;
+	padding: 4px 4px;
+	width: 150px;
+	background:#F0F0F0;
+	border-radius:10px 0 10px 0;
+	-moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	-ms-transition: all 1s ease-in-out;
+	-khtml-transition: all 1s ease-in-out;
+	
+	}
+	
+	
+.admin-form .field:focus{
+background:#fbfbfb;
+-moz-box-shadow:5px 5px 5px #666;
+-webkit-box-shadow:5px 5px 5px #666;
+-o-box-shadow:5px 5px 5px #666;
+-ms-box-shadow:5px 5px 5px #666;
+-khtml-box-shadow:5px 5px 5px #666;
+
+-moz-transform: scale(1.05);
+-webkit-transform: scale(1.05);
+-o-transform: scale(1.05);
+-ms-transform: scale(1.05);
+-ktml-transform: scale(1.05);
+
+}
+
+.admin-form .field:focus{
+background-color:#f7f7f7;
+}
+
+
+</style>
+</head>
+<body>
+<div class="bgwrap">
+  <div class="wrap">
+    <div class="admin-form">
+      <form>
+        <ul>
+          <li>
+            <label for="user">User</label>
+            <input type="text" class="field" name="user"  placeholder="user name"/>
+          </li>
+          <li>
+            <label for="pass">Password</label>
+            <input type="password" class="field" name="pass" placeholder="password" />
+          </li>
+          <li>
+            <label>&nbsp;</label>
+            <input type="submit" class="submit" value="submit" />
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+  <!--end wrap-->
+</div>
+<!--bgwrap-->
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+
+<style>
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+}
+label {
+	position:absolute;
+	top:5px;
+	left:5px;
+	color:#000;
+	z-index:1000;
+}
+.field{
+	border:1px solid #ccc;
+	border-radius:5px;
+	padding:4px 5px;
+	/*background:url(name.png) 5px center no-repeat;*/
+}
+div {
+	position:relative;
+	overflow:auto;
+}
+p {
+	text-indent:100px;
+}
+</style>
+<script type="text/javascript">
+$(function(){
+	$('.field').focus(function(){
+		$('label').animate({
+			opacity:0.3
+		});
+	});
+	$('.field').blur(function(){
+		$('label').animate({
+			opacity:1
+		});
+	});
+	$('.field').keyup(function(){
+		if($(this).val()!=''){
+			$('label').hide();
+		}else{
+			$('label').show();
+		}
+	});
+});
+</script>
+</head>
+
+<body>
+<div>
+<label>Name</label>
+<input type="text" class="field" />
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pulvinar magna quis ante molestie ultrices. Integer ornare lorem vitae enim scelerisque pellentesque. Pellentesque semper turpis a justo viverra vitae vehicula massa volutpat. Curabitur ut lectus non tortor feugiat iaculis. Nam iaculis nulla id justo ullamcorper et luctus elit laoreet. Integer pellentesque turpis mauris. Mauris in elit ac enim sodales adipiscing pharetra ac magna. Integer ultrices pellentesque turpis in gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+</body>
+</html>

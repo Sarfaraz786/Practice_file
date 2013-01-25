@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>CSS Menu in IE6</title>
+    <style type="text/css">
+        #menu {
+            background-color: #cccccc;
+            color: black;
+            text-decoration: none;
+            position: relative;
+        }
+
+        #menu span {
+            display: none;
+        }
+
+        /* I'm using <b /> tags for the submenu items, just to make the styling easier. */
+        #menu ul li {
+            display: block;
+            font-weight: normal;
+        }
+
+        /* IE6 seems to require some :hover rule on the anchor element itself.
+           Without it, the '#menu:hover span' rule below is ignored. */
+        #menu:hover {
+            border: none;
+        }
+
+        #menu:hover span {
+            background-color: #cccccc;
+            cursor: pointer;
+            display: block;
+            position: absolute;
+            top: 1em;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+             <ul>
+  <li><a href="#">Heading 1</a></li>
+  <li><a href="#">Heading 2</a>
+    <ul>
+      <li><a href="#">Subitem 1</a></li>
+      <li><a href="#">Subitem 2</a></li>
+      <li><a href="#">Subitem 3</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Heading 3</a>
+    <ul>
+      <li><a href="#">Subitem 4</a></li>
+      <li><a href="#">Subitem 5</a></li>
+      <li><a href="#">Subitem 6</a></li>
+    </ul>
+  </li>
+</ul>
+      
+       
+       
+    </div>
+</body>
+</html>

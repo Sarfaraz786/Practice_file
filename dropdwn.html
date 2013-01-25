@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+
+.glossymenu{
+
+    padding: 0 0 0 0px;
+    margin: 0 auto 0 auto;
+    background: url(../images/menur_bg.gif) repeat-x; 
+    height: 36px;
+    list-style: none;
+    border:solid 1px #CCC;
+}
+
+.glossymenu li{
+
+    float:left;
+}
+
+.glossymenu li a{
+
+    float: left;
+    display: block;
+    color:#000;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: bold; 
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 20px;
+
+}
+
+.glossymenu li a b{
+
+    float: left;
+    display:block;
+    padding: 0 28px 0 8px; 
+}
+
+.glossymenu li a:hover{
+
+    color: #fff;
+    background: url(../images/menur_hover_left.gif) no-repeat; 
+    background-position: left bottom;;
+}
+
+.glossymenu li a:hover b{
+
+    color: #fff; 
+    background-image: url(../images/menur_hover_right.gif);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.glossymenu li.separator {
+
+    background:url(../images/separator.gif) no-repeat;
+    background-position:right;
+    padding: 0 5px 0 3.5px;
+}
+
+   /* Added for the drop down */  
+.glossymenu .child {
+
+    position:absolute;
+    visibility:hidden;
+    top:100px;
+}
+
+.glossymenu ul li:hover  {
+
+    visibility:visible;
+    z-index:9999; 
+}

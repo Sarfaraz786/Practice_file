@@ -1,0 +1,67 @@
+.slimScrollDiv {
+	margin:0 auto;
+}
+body, html {
+	margin:0;
+	padding:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+.layout {
+	margin:5px 0;
+	background:rgba(0,0,255,0.3);
+}
+.wrap {
+	overflow: hidden;
+}
+.wrap:hover {
+    overflow-y: scroll ;
+}
+.wrap.vertical {
+	width:320px;
+	height:480px;
+}
+.wrap.horizontal {
+	width:480px;
+	height:320px;
+}
+.wrap {
+	background:#ccc;
+	margin:0 auto;
+}
+.boxrw {
+	overflow:auto;
+	padding:5px;
+}
+.box {
+	float:left;
+	background:rgba(51,102,51,0.7);
+	padding:5px;
+}
+.vertical .box.box1-3 {
+	width:93.3px;
+}
+.vertical .box.box1-4 {
+	width:67.5px;
+}
+.vertical .box.box1-2 {
+	width:145px;
+}
+.vertical .box.box1-1 {
+	width:300px;
+}
+
+
+
+.horizontal .box.box1-3 {
+	width:146.6px;
+}
+.horizontal .box.box1-4 {
+	width:107.5px;
+}
+.horizontal .box.box1-2 {
+	width:225px;
+}
+.horizontal .box.box1-1 {
+	width:460px;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+<style type="text/css">
+.hamidraza {
+	overflow:auto;
+	padding:10px;
+	display:none;
+	position:absolute;
+	top:35px;
+	left:0;
+}
+.hamid {
+	width:200px;
+	height:50px;
+	background:#039;
+	-moz-box-shadow:#666 0px 5px 5px;
+}
+.hamid2 {
+	width:200px;
+	height:50px;
+	background:#039;
+	-moz-box-shadow:#666 0px 5px 5px;
+}
+.hamidtext {
+	position:absolute;
+	font-stretch:ultra-condensed;
+	color:#ccc;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:45px;
+	margin-left:30px;
+	margin-top:-27px;
+	text-transform:uppercase;
+	font-weight:bold;
+	text-shadow:#666 0px -1px 5px;
+}
+.hamid {
+	-moz-border-radius-topright: 150px 150px;
+	-moz-border-radius-bottomleft: 50px 150px;
+	background:#ccc;
+}
+.hamid2 {
+	-moz-border-radius-topleft: 50px 150px;
+	-moz-border-radius-bottomright: 150px 150px;
+	background:#ccc;
+}
+</style>
+</head>
+
+<body>
+<div class="hamidraza">
+  <div class="hamid"> </div>
+  <div class="hamidtext">Hamid</div>
+  <div class="hamid2"> </div>
+</div>
+<script type="text/javascript">
+hamid();
+function resethamid(){
+	$('.hamidraza').css({
+		'position':'absolute',
+		'top':'35px',
+		'left':'0',
+		marginLeft:0,
+		opacity:'1'
+	});
+	hamid();
+}
+function hamid(){
+	$('.hamidraza').fadeIn(function(){
+		$('.hamidraza').delay(200).animate({
+			marginLeft:$(window).width()-$('.hamid').width()-20,
+			opacity:'0'
+		}, 1000, function(){
+			resethamid();
+		});
+	});
+}
+</script>
+</body>
+</html>
